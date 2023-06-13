@@ -30,52 +30,54 @@
                 </ul>
             </div>
         </nav>
+
+    
     <form action="cadastro_agenda.php" method="post" enctype="multipart/form-data">
-        <div>
+        <div class="form-group">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" class="form-control" id="exampleInputPassword1" placeholder="Nome">
         </div>
-        <div>
+        <div class="form-group">
             <label for="apelido">Apelido</label>
-            <input type="text" name="apelido" id="apelido">
+            <input type="text" name="apelido" id="apelido" class="form-control" id="exampleInputPassword1" placeholder="Apellido">
         </div>
-        <div>
+        <div class="form-group">
             <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco">
+            <input type="text" name="endereco" id="endereco" class="form-control" id="exampleInputPassword1" placeholder="Endereço">
         </div>
-        <div>
+        <div class="form-group">
             <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro">
+            <input type="text" name="bairro" id="bairro" class="form-control" id="exampleInputPassword1" placeholder="Bairro">
         </div>
-        <div>
+        <div class="form-group">
             <label for="cidade">Cidade</label>
-            <input type="text" name="cidade" id="cidade">
+            <input type="text" name="cidade" id="cidade" class="form-control" id="exampleInputPassword1" placeholder="Nome">
         </div>
-        <div>
+        <div class="form-group">
             <label for="estado">Estado</label>
-            <input type="text" name="estado" id="estado">
+            <input type="text" name="estado" id="estado" class="form-control" id="exampleInputPassword1" placeholder="Nome">
         </div>
-        <div>
-            <label for="telefone">Telefone</label>
-            <input placeholder="(18)99999-8888" type="tel" name="telefone" id="telefone" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
-        </div>
-        <div>
+        <div class="form-group">
             <label for="celular">Celular</label>
-            <input type="tel" placeholder="(18)3691-1234" name="celular" id="celular" pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}">
+            <input placeholder="(18)99999-8888" type="tel" name="telefone" id="telefone" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" class="form-control" id="exampleInputPassword1" placeholder="Nome">
         </div>
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" placeholder="(18)3691-1234" name="celular" id="celular" pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}" class="form-control" id="exampleInputPassword1" placeholder="Nome">
         </div>
-        <div>
-            <label for="dt_cadastro">Data cadastro</label>
-            <input type="date" name="dt_cadastro" id="dt_cadastro">
-        </div>
-        <div>
-            <input type="file" name="foto" id="foto" accept="image/* ">
-        </div>
-        <input type="submit" value="Salvar">
-    </form>
+            <div class="form-group">
+              <label for="email">Endereço de email</label>
+              <input type="email" name="email" id="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+            </div>
+            <div>
+                <label for="dt_cadastro">Data cadastro</label>
+                <input type="date" name="dt_cadastro" id="dt_cadastro">
+            </div>
+            <div class="form-group">
+                <input type="file" name="foto" id="foto" accept="image/* " class="form-control-file">
+            </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
     
 </body>
 </html>

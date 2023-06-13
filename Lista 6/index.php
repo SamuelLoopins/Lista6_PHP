@@ -30,8 +30,5 @@
             </ul>
         </div>
     </nav>
-        <li><a href="Cadastro_agenda.html">Cadastrar Agenda</a></li>
-        <li><a href="Listar_agenda.php">Listar Agenda</a></li>
-    </ul>
 </body>
 </html>
